@@ -12,29 +12,17 @@ For more information, please visit [https://www.edenai.co](https://www.edenai.co
 PHP 5.5 and later
 
 ## Installation & Usage
-### Composer
-
-To install the bindings via [Composer](http://getcomposer.org/), add the following to `composer.json`:
-
-```
-{
-  "repositories": [
-    {
-      "type": "git",
-      "url": "https://github.com/edenai/php-sdk.git"
-    }
-  ],
-  "require": {
-    "edenai/php-sdk": "*@dev"
-  }
-}
-```
-
-Then run `composer install`
 
 ### Manual Installation
 
-Download the files and include `autoload.php`:
+Clone this repository then install the package :
+
+```bash
+cd edenai-php/edenai
+composer install
+```
+
+Include `autoload.php` in your code to use the library:
 
 ```php
     require_once('/path/to/edenai/vendor/autoload.php');
