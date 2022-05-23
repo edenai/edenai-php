@@ -1,0 +1,7 @@
+version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - ".:/edenai-php"
+    entrypoint: ["tail", "-f", "/dev/null"] 
