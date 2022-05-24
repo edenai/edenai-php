@@ -8,7 +8,7 @@ Method | HTTP request | Description
 
 
 # **search**
-> \edenai\Model\InlineResponse20014 search($text, $words)
+> \edenai\Model\InlineResponse20019 search($text, $words)
 
 
 
@@ -17,7 +17,7 @@ This is an easy tool to lookup for a list of words in a given text
 ### Example
 ```php
 <?php
-require_once(__DIR__ . '/your_path_to_vendor/vendor/autoload.php');
+require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
 $config = edenai\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\edenai\Model\InlineResponse20014**](../Model/InlineResponse20014.md)
+[**\edenai\Model\InlineResponse20019**](../Model/InlineResponse20019.md)
 
 ### Authorization
 
@@ -59,7 +59,7 @@ Name | Type | Description  | Notes
 
 ### HTTP request headers
 
- - **Content-Type**: application/x-www-form-urlencoded
+ - **Content-Type**: application/x-www-form-urlencoded, multipart/form-data
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
