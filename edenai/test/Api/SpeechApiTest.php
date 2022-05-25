@@ -118,9 +118,6 @@ class SpeechApiTest extends \PHPUnit_Framework_TestCase
     {
         $result = $this->apiInstance->asyncSpeechToText($this->language, $this->files, $this->providers, $this->webhook_receiver, $this->users_webhook_parameters, $this->vocab);
         $this->assertNotNull($result);
-        $this->assertNotNull($result->getResult());
-        $this->assertNotNull($result->getResult()->getJobId());
-        $this->assertNotNull($result->getResult()->getStatus());
     }
 
     /**
@@ -159,11 +156,11 @@ class SpeechApiTest extends \PHPUnit_Framework_TestCase
      */
     public function testTextToSpeech()
     {
-        // $result = $this->apiInstance->textToSpeech($this->text, $this->language, $this->option, $this->providers);
-        // $this->assertNotNull($result);
-        // $this->assertNotNull($result->getResult()[0]['result']);
-        // $this->assertNotNull($result->getResult()[0]['result']->getText());
-        // $this->assertNotNull($result->getResult()[0]['result']->getAudioPath());
-        // $this->assertNotNull($result->getResult()[0]['result']->getVoiceType());
+        $result = $this->apiInstance->textToSpeech($this->text, $this->language, $this->option, $this->providers);
+        $this->assertNotNull($result);
+        $this->assertNotNull($result->getResult()[0]['result']);
+        $this->assertNotNull($result->getResult()[0]['result']->getText());
+        $this->assertNotNull($result->getResult()[0]['result']->getAudioPath());
+        $this->assertNotNull($result->getResult()[0]['result']->getVoiceType());
     }
 }
