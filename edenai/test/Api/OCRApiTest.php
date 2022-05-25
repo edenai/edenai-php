@@ -141,4 +141,28 @@ class OCRApiTest extends \PHPUnit_Framework_TestCase
         $this->assertNotNull($result->getResult()[0]['result'][0]->getLocale()['language']);
 
     }
+
+    /**
+     * Test case for ocrTables
+     *
+     * .
+     *
+     */
+    public function testOcrTables()
+    {
+        $result = $this->apiInstance->ocrTables($this->files, $this->providers, $this->language);
+        $this->assertNotNull($result);
+    }
+
+    /**
+     * Test case for asyncOcrTables
+     *
+     * .
+     *
+     */
+    public function testAsyncOcrTables()
+    {
+        $result = $this->apiInstance->asyncOcrTablesLaunch($this->language, $this->files, $this->providers);
+        $this->assertNotNull($result);
+    }
 }

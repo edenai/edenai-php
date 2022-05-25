@@ -168,4 +168,40 @@ class TextApiTest extends \PHPUnit_Framework_TestCase
         $this->assertNotNull($result->getResult()[0]['result']->getLemmas());
         $this->assertNotNull($result->getResult()[0]['result']->getOthers());
     }
+
+    /**
+     * Test case for questionAnswering
+     *
+     * .
+     *
+     */
+    public function testQuestionAnswering()
+    {
+        $result = $this->apiInstance->questionAnswering('["This is a text"]', 'What is it?', '["openai_ada", "openai_davinci"]', 'In 2017, U.S life expectancy was 78.6 years.', '[["What is human life expectancy in the United States?", "78 years"]]', 0.7);
+        $this->assertNotNull($result);
+    }
+
+    /**
+     * Test case for search
+     *
+     * .
+     *
+     */
+    public function testSearch()
+    {
+        $result = $this->apiInstance->search('["Hello World", "Goodbye Mars"]', 'Earth', '["openai_ada", "openai_davinci"]');
+        $this->assertNotNull($result);
+    }
+
+    /**
+     * Test case for textSummarization
+     *
+     * .
+     *
+     */
+    public function testTextSummarization()
+    {
+        $result = $this->apiInstance->textSummarization("Washington, D.C., formally the District of Columbia, also known as just Washington or just D.C., is the capital city and only federal district of the United States. It is located on the east bank of the Potomac River, which forms its southwestern and southern border with the U.S. state of Virginia, and shares a land border with the U.S. state of Maryland on its remaining sides. The city was named for George Washington, a Founding Father and the first president of the United States, and the federal district is named after Columbia, a female personification of the nation. As the seat of the U.S. federal government and several international organizations, the city is an important world political capital. It is one of the most visited cities in the U.S., seeing over 20 million visitors in 2016.", '["openai_ada", "openai_davinci"]');
+        $this->assertNotNull($result);
+    }
 }
