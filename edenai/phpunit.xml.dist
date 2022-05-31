@@ -8,7 +8,7 @@
     <testsuites>
         <testsuite>
             <directory>./test/Api</directory>
-            <!-- <directory>./test/Model</directory> -->
+            <directory>./test/Model</directory>
         </testsuite>
     </testsuites>
 

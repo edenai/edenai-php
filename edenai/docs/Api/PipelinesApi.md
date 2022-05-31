@@ -17,7 +17,7 @@ Pipelines let you combine different AI APIs from different providers into a sing
 ### Example
 ```php
 <?php
-require_once(__DIR__ . '/your_path_to_vendor/vendor/autoload.php');
+require_once(__DIR__ . '/vendor/autoload.php');
 
 // Configure API key authorization: Bearer
 $config = edenai\Configuration::getDefaultConfiguration()->setApiKey('Authorization', 'YOUR_API_KEY');

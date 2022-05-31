@@ -3,16 +3,12 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**image_path** | **string** |  | [optional] 
-**attributes_label** | **string[]** |  | [optional] 
-**confidences** | **float[]** |  | [optional] 
-**x_mins** | **float[]** |  | [optional] 
-**x_maxs** | **float[]** |  | [optional] 
-**y_mins** | **float[]** |  | [optional] 
-**y_maxs** | **float[]** |  | [optional] 
-**landmarks** | [**\edenai\Model\InlineResponse20012ResultLandmarks**](InlineResponse20012ResultLandmarks.md) |  | [optional] 
-**emotions** | **object** |  | [optional] 
-**poses** | **object** |  | [optional] 
+**text** | **string** |  | [optional] 
+**keywords** | **string[]** |  | [optional] 
+**importances** | **float[]** |  | [optional] 
+**tags** | **string[]** |  | [optional] 
+**lemmas** | **string[]** |  | [optional] 
+**others** | **object[]** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

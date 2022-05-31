@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\edenai\Model\InlineResponse2003Result1[]**](InlineResponse2003Result1.md) |  | [optional] 
+**result** | [**\edenai\Model\InlineResponse204Result**](InlineResponse204Result.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 
